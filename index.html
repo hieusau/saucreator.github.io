@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="assets/css/styles.css">
+        <title>saucreator</title>
+    </head>
+    <body>
+        <!-- OVERLAY -->
+        <div class="overlay first"></div>
+        <div class="overlay second"></div>
+        <div class="overlay third"></div>
+
+        <!-- HEADER -->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">#SâuCreator</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#" class="nav__link">Trang chủ</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Thông tin</a></li>
+                        <!-- <li class="nav__item"><a href="#" class="nav__link">Dịch vụ</a></li> -->
+                        <li class="nav__item"><a href="#" class="nav__link">Bộ sưu tập</a></li>
+                        <li class="nav__item"><a href="#" class="nav__link">Liên hệ</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <ion-icon name="menu"></ion-icon>
+                </div>
+            </nav>
+        </header>
+
+        <!-- MAIN -->
+        <main class="l-main bd-grid">
+            <div class="home">
+                <div class="home__information">
+                    <span class="home__pressent anime-text">Xin chào, tôi là</span>
+                    <h1 class="home__title anime-text">Sâu Creator</h1>
+                    <span class="home__skill anime-text">Designer & Film Maker</span>
+                    
+                    <div>
+                        <a href="#" class="home__button anime-text">DOWNLOAD CV</a>
+                    </div>
+                </div>
+
+                <div class="home__img">
+                    <img src="assets/img/img.jpg" alt="">
+                </div>
+                
+                <div class="home__social">
+                    <a style="color:white" href="https://www.facebook.com/hieusau99"><ion-icon name="logo-facebook" class="home__social-icon"></ion-icon></a>
+                    <a style="color:white" href="https://www.instagram.com/hieusau99"><ion-icon name="logo-instagram" class="home__social-icon"></ion-icon></a>
+                    <a style="color:white" href="https://www.youtube.com/channel/UCb50j8ydErIXJnVwRQpW0-w"><ion-icon name="logo-youtube" class="home__social-icon"></ion-icon></a>
+                </div>
+            </div>
+            <div class="stories">
+                <div class="stories__information">
+                    <span class="home__skill anime-text">Câu chuyện của tôi...</span>
+                </div>
+                <br>
+                <a class="anime-text" style="font-weight:lighter">Trong suốt sự nghiệp của mình, Gates đã rất thành công khi theo đuổi những niềm đam mê của mình, từ sở thích lập trình cơ bản đến trở thành một nhà từ thiện. Gates không bao giờ làm những việc mà ông không tin tưởng sẽ thành công. Ông hiểu rõ bản thân mình muốn gì và cần phải làm gì để đạt được thành công.</a>
+            </div>
+            <div class="videos">
+                <div class="stories__information">
+                    <span class="home__skill anime-text">Những sản phẩm của tôi</span>
+                </div>
+                <br>
+                <div class="list_videos">
+                    <div id="frame" class="embed-responsive embed-responsive-16by9">
+                        <iframe src="https://www.youtube.com/embed/zwx7kFNf3VI" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <a style="font-weight:lighter">#1 Là tự em đa tình</a>
+                    <div id="frame" class="embed-responsive embed-responsive-16by9">
+                        <iframe src="https://www.youtube.com/embed/F0_FRYcl9W4" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <a style="font-weight:lighter">#2 Duyên</a>
+                    
+                    <div id="frame" class="embed-responsive embed-responsive-16by9">
+                        <iframe width="1280" height="720" src="https://www.youtube.com/embed/XzRuwHyC6oA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <a style="font-weight:lighter">#3 Lời cảm ơn</a>
+                    
+                    <div id="frame" class="embed-responsive embed-responsive-16by9">
+                        <iframe width="1280" height="720" src="https://www.youtube.com/embed/PVf1dR11mDE" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    </div>
+                    <a style="font-weight:lighter">#4 Waiting for you</a>
+                    
+                </div>
+            </div>
+        </main>
+
+        <!-- GSAP -->
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.2.4/gsap.min.js"></script>
+
+        <!-- MAIN -->
+        <script src="assets/js/main.js"></script>
+    
+        <!-- ICONS -->
+        <script  type="module" src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons/ionicons.esm.js"></script>
+    </body>
+</html>
