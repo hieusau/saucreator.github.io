@@ -82,6 +82,7 @@ a {
 img {
   max-width: 100%;
   height: auto;
+  padding-top: 4%;
 }
 
 /*----- LAYOUT -----*/
@@ -180,7 +181,7 @@ img {
 }
 
 .home {
-  display: -ms-grid;
+  /* display: -ms-grid; */
   display: grid;
   -ms-grid-columns: 1fr;
       grid-template-columns: 1fr;
@@ -189,7 +190,7 @@ img {
       grid-template-rows: max-content max-content;
   -ms-flex-line-pack: distribute;
       align-content: space-around;
-  row-gap: 2.3rem;
+  /* row-gap: 2.3rem; */
   /* height: 100%; */
   padding-top: 20%;
   padding-bottom: 20%;
@@ -245,21 +246,19 @@ img {
   /* z-index: var(--z-normal); */
 }
 
-/* .home__social {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
+.home__social {
+  -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  padding-bottom: 1rem;
-} */
+      -ms-flex-direction: row;
+          flex-direction: row;
+  padding-top: 1rem;
+}
 
 .home__social-icon {
-  margin-bottom: 2rem;
+  margin-bottom: -5rem;
+  padding-right: 1rem;
+  padding-left: 2.6rem;
   font-size: 1.33rem;
-  cursor: pointer;
 }
 
 .home__social-icon:hover {
@@ -303,12 +302,16 @@ img {
   .home__information {
     margin-top: 4rem;
   }
+
   .home__social {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
-    padding-top: 5rem;
+    padding-top: 20px;
+    /* padding-top: 5rem; */
+    
+    
     /* text-align: left; */
     /* padding-left: 60; */
   }
@@ -344,30 +347,35 @@ img {
   background-color: var(--first-color);
 }
 
-/* .second {
-  background-color: var(--first-color);
-  left: 33.3%;
+.nav__logo:hover {
+  color: #d69729;
 }
-
-.third {
-  background-color: var(--first-color);
-  left: 66.6%;
-} */
 
 .stories {
-  padding-top:40%;
-  text-align: center;
-  padding-bottom: 8%;
-}
-.videos {
+  padding-top:150px;
   text-align: center;
 }
 
+.videos_home {
+  text-align: center;
+}
+
+.videos {
+  text-align: center;
+  padding-top: 200px;
+}
+
+.row {
+  display: flex;
+  /* padding-left: 25%; */
+  padding-top: 45px;
+  /* padding-right: 1%; */
+}
 #frame{
   position: relative;
   padding-bottom: 56.25%; /* 16:9 */
   height: 0;
-  margin: 20px;
+  /* margin: 20px; */
 }
 #frame iframe {
   position: absolute;
@@ -375,4 +383,18 @@ img {
   left: 2%;
   width: 96%;
   height: 100%;
+}
+
+.card_video {
+  width: 50%;
+  padding-bottom: 10px;
+  border-radius: 6px;
+}
+
+.card_video:hover {
+  background-color: #1AD69C;
+}
+
+#card_href {
+  color: #FFF
 }
