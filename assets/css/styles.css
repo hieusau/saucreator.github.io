@@ -388,6 +388,7 @@ img {
 .card_video {
   width: 50%;
   padding-bottom: 10px;
+  padding-top: 10px;
   border-radius: 6px;
 }
 
