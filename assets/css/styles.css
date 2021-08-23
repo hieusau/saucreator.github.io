@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"); */
 /*----- VARIABLES CSS Y SASS -----*/
 /*Varibles sass*/
 /*Variables css*/
@@ -62,7 +62,6 @@ body {
   background-color: var(--black-color);
   color: var(--white-color);
   font-weight: 700;
-  /* overflow: hidden; */
 }
 
 h1, h2 {
@@ -79,12 +78,19 @@ a {
   text-decoration: none;
 }
 
-img {
+#home_img {
   max-width: 100%;
   height: auto;
   padding-top: 4%;
 }
 
+#logo_img {
+  padding-top: 3px;
+  height: 40px;
+}
+#logo_img:hover {
+  background: darkorange;
+}
 /*----- LAYOUT -----*/
 .bd-grid {
   max-width: 1200px;
@@ -149,7 +155,7 @@ img {
   position: relative;
 }
 
-.nav__link:hover::after {
+/* .nav__link:hover::after {
   position: absolute;
   content: '';
   width: 1.5rem;
@@ -157,7 +163,7 @@ img {
   left: 0.125rem;
   top: 2.125rem;
   background-color: var(--first-color);
-}
+} */
 
 .nav__logo {
   font-size: var(--normal-font-size);
@@ -211,18 +217,24 @@ img {
 }
 
 .home__pressent {
-  font-size: var(--small-font-size);
+  font-size: var(--h2-font-size);
   font-weight:lighter;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  
 }
 
 .home__title {
   font-size: var(--h1-font-size);
-  font-weight:lighter;
+  font-weight:inherit;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
 }
 
 .home__skill {
   font-size: var(--h2-font-size);
+  /* font-size: var(--small-font-size); */
   font-weight:lighter;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+
 }
 
 .home__button {
@@ -240,10 +252,7 @@ img {
   position: absolute;
   right: 0%;
   bottom: 0%;
-  top: 4%;
-  /* height: 50px; */
-  /* width: 291px; */
-  /* z-index: var(--z-normal); */
+  top: 3%;
 }
 
 .home__social {
@@ -283,7 +292,7 @@ img {
     padding-top: 0;
   }
   .nav__item {
-    margin-left: 3rem;
+    margin-left: 1.5rem;
     margin-bottom: 0;
   }
   .nav__toggle, .nav__close {
@@ -318,6 +327,17 @@ img {
     font-size: 20px;
     color: var(--white-color);
   }
+
+  #home_img {
+    max-width: 100%;
+    height: auto;
+    padding-top: 3%;
+  }
+  
+  #logo_img {
+    padding-top: 3px;
+    height: 40px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -325,6 +345,7 @@ img {
     margin-left: auto;
     margin-right: auto;
   }
+
 }
 
 /*ANIMATE*/
@@ -342,8 +363,13 @@ img {
 }
 
 .nav__logo:hover {
-  color: #d69729;
+  color: #ebae44;
 }
+
+.nav__link:hover {
+  color: #ebae44;
+}
+
 
 .stories {
   padding-top:320px;
@@ -388,6 +414,10 @@ img {
 }
 
 @media only screen and (max-width: 1000px) {
+  .split_char{
+    display: none;
+  }
+
   .row {
     display: block;
     padding-top: 20px;
