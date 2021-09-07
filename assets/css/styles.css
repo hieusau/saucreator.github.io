@@ -5,8 +5,8 @@
 /*Colores*/
 :root {
   --first-color: #1AD69C;
-  --black-color: #0e0c1f;
-  /* background: #1f1f1f; */
+  /* --black-color: #fff; */
+  background: #000000;
   --white-color: #FFF;
 }
 
